@@ -1,3 +1,3 @@
-export function add(a: number, b: number): number {
-  return a + b
-}
+export * from './basics'
+export * from './prime-numbers'
+export * from './prime-numbers-aks'
