@@ -1,3 +1,5 @@
 export * from './basics'
 export * from './prime-numbers'
 export * from './prime-numbers-aks'
+export * from './complex'
+export * from './zeta'

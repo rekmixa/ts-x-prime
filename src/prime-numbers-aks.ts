@@ -1,4 +1,4 @@
-import { gcd, isPerfectPower } from './basics'
+import { gcd, isPerfectPower } from './'
 
 // Арифметика многочленов по модулю x^r - 1 и по модулю number
 export function addPolynomials(a: number[], b: number[], modulus: number): number[] {
