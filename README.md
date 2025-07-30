@@ -83,10 +83,10 @@ console.log(zetaReal(2)) // ~1.6449 (π²/6)
 console.log(zetaEuler(2)) // ~1.6449
 
 // Gamma function
-console.log(gamma({ re: 0.5, im: 0 })) // ~1.772 (√π)
+console.log(gamma(new Complex(0.5, 0))) // ~1.772 (√π)
 
 // Dirichlet eta
-console.log(eta({ re: 1, im: 0 }, 10000)) // ~ln(2)
+console.log(eta(new Complex(1, 0), 10000)) // ~ln(2)
 
 // Full zeta function (complex)
 console.log(zeta(new Complex(2, 0))) // ~1.6449
