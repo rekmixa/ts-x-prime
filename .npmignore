@@ -1,0 +1,10 @@
+src/
+node_modules/
+tests/
+coverage/
+tsup.config.ts
+tsconfig.json
+vitest.config.mts
+Makefile
+.prettierrc
+.gitignore
