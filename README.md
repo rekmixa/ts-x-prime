@@ -57,6 +57,7 @@ import {
   gamma,
   eta,
   zeta,
+  Complex,
 } from 'ts-x-prime'
 
 // Generate primes using sieve
@@ -88,7 +89,7 @@ console.log(gamma({ re: 0.5, im: 0 })) // ~1.772 (√π)
 console.log(eta({ re: 1, im: 0 }, 10000)) // ~ln(2)
 
 // Full zeta function (complex)
-console.log(zeta({ re: 2, im: 0 })) // ~1.6449
+console.log(zeta(new Complex(2, 0))) // ~1.6449
 ```
 
 ---

@@ -108,7 +108,7 @@ export function eta(s: Complex, terms: number): Complex {
 export function zeta(s: Complex, terms: number = 10_000): Complex {
   // Особая точка — полюс при s = 1
   if (Math.abs(s.subReal(1).abs()) < 1e-12) {
-    throw new Error('Полюс дзета-функции при s = 1')
+    throw new Error('Pole of the zeta function at s = 1')
   }
 
   if (s.re > 0) {
