@@ -1,7 +1,15 @@
 {
   "name": "ts-x-prime",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Library for working with prime numbers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rekmixa/ts-x-prime.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rekmixa/ts-x-prime/issues"
+  },
+  "homepage": "https://github.com/rekmixa/ts-x-prime#readme",
   "type": "module",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
