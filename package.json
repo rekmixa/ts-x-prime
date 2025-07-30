@@ -12,10 +12,16 @@
     "build": "tsup",
     "prebuild": "vitest run"
   },
-  "keywords": ["prime", "zeta", "riemann", "aks"],
+  "keywords": [
+    "prime",
+    "zeta",
+    "riemann",
+    "aks"
+  ],
   "author": "rekmixa",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^24.1.0",
     "@vitest/coverage-v8": "^3.2.4",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",

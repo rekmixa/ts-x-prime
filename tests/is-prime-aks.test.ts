@@ -1,22 +1,22 @@
 import { describe, expect, test } from 'vitest'
-import { isPrime } from '../src'
+import { isPrimeAKS } from '../src'
 import { getPrimeNumbers } from './helpers'
 
 const primeNumbers: number[] = getPrimeNumbers()
 const lastPrimeNumber: number = primeNumbers[primeNumbers.length - 1]
 
-describe('check is-prime logic', () => {
+describe('check isPrimeAKS logic', () => {
   test('check non-integer numbers', () => {
     for (let i = 1; i <= 1000; i++) {
-      expect(isPrime(i + 0.1), String(i)).toBe(false)
+      expect(isPrimeAKS(i + 0.1), String(i)).toBe(false)
     }
   })
 
-  test('check isPrime function', () => {
+  test('check isPrimeAKS function', () => {
     for (let i = 1; i <= lastPrimeNumber; i++) {
       const expectedResult = primeNumbers.includes(i)
-      const actualResult = isPrime(i)
-      expect(actualResult, String(i)).toBe(expectedResult)
+      const actualResultAks = isPrimeAKS(i)
+      expect(actualResultAks, String(i)).toBe(expectedResult)
     }
   })
 })
