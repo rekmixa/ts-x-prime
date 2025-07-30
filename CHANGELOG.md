@@ -8,3 +8,4 @@
 
 - isPrime/isPrimeAKS functions
 - generateSieve/sieveToPrimes/isPrimeSieve functions
+- zetaReal/zetaEuler/gamma/eta/zeta functions
