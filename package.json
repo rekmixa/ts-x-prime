@@ -1,6 +1,6 @@
 {
   "name": "ts-x-prime",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Library for working with prime numbers",
   "repository": {
     "type": "git",

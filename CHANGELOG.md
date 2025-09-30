@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+## [0.1.0] - 2025-09-30
+### Added
+- class for working with goldbach pairs
+
 ## [0.0.3] - 2025-07-30
 ### Added
 - github urls in package.json

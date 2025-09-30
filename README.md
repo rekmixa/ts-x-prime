@@ -28,18 +28,20 @@ yarn add ts-x-prime
 
 ## Features
 
-| Function             | Description                                                      |
-| -------------------- | ---------------------------------------------------------------- |
-| `generateSieve(n)`   | Generates a boolean sieve of Eratosthenes up to `n`              |
-| `sieveToPrimes(s)`   | Converts a sieve to a list of primes                             |
-| `isPrimeSieve(n, s)` | Checks if `n` is prime using a precomputed sieve                 |
-| `isPrime(n)`         | Checks if `n` is prime using the 6k ± 1 optimization             |
-| `isPrimeAKS(n)`      | Checks if `n` is prime using the AKS primality test (slow)       |
-| `zetaReal(s, terms)` | Approximates the Riemann zeta function for real `s`              |
-| `zetaEuler(s, max)`  | Evaluates ζ(s) via the Euler product using primes up to `max`    |
-| `gamma(z)`           | Computes the gamma function for a complex number `z`             |
-| `eta(s, terms)`      | Dirichlet eta function η(s) for complex `s` with specified terms |
-| `zeta(s, terms)`     | Approximates ζ(s) for complex `s` using analytic continuation    |
+| Function                      | Description                                                      |
+| ----------------------------- | ---------------------------------------------------------------- |
+| `generateSieve(n)`            | Generates a boolean sieve of Eratosthenes up to `n`              |
+| `sieveToPrimes(s)`            | Converts a sieve to a list of primes                             |
+| `isPrimeSieve(n, s)`          | Checks if `n` is prime using a precomputed sieve                 |
+| `isPrime(n)`                  | Checks if `n` is prime using the 6k ± 1 optimization             |
+| `isPrimeAKS(n)`               | Checks if `n` is prime using the AKS primality test (slow)       |
+| `zetaReal(s, terms)`          | Approximates the Riemann zeta function for real `s`              |
+| `zetaEuler(s, max)`           | Evaluates ζ(s) via the Euler product using primes up to `max`    |
+| `gamma(z)`                    | Computes the gamma function for a complex number `z`             |
+| `eta(s, terms)`               | Dirichlet eta function η(s) for complex `s` with specified terms |
+| `zeta(s, terms)`              | Approximates ζ(s) for complex `s` using analytic continuation    |
+| `new Goldbach(n).getPairs()`  | Getting goldbach pairs for `n`                                   |
+| `new Goldbach(n).getPrimes()` | Getting goldbach primes for `n`                                  |
 
 ---
 
@@ -58,6 +60,7 @@ import {
   eta,
   zeta,
   Complex,
+  Goldbach,
 } from 'ts-x-prime'
 
 // Generate primes using sieve
@@ -90,6 +93,9 @@ console.log(eta(new Complex(1, 0), 10000)) // ~ln(2)
 
 // Full zeta function (complex)
 console.log(zeta(new Complex(2, 0))) // ~1.6449
+
+// Getting goldbach pairs for 10
+console.log(new Goldbach(10).getPairs()) // [[3, 7], [5, 5]]
 ```
 
 ---
